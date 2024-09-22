@@ -1,205 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:weightSum="5">
 
+    >
 
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:dividerHeight="1dp"/>
-
-<!--    <LinearLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_weight="1"-->
-<!--        android:orientation="horizontal"-->
-<!--        android:weightSum="5">-->
-
-        <ImageView
-            android:id="@+id/img1"
-            android:layout_width="170dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@color/black"></ImageView>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-
-            android:layout_weight="3"
-            android:weightSum="2">
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="asfaf"
-                android:textStyle="bold"></EditText>
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="af">
-            </EditText>
-        </LinearLayout>
-
-<!--    </LinearLayout>-->
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="horizontal"
-        android:weightSum="5">
+        android:weightSum="5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/img2"
-            android:layout_width="170dp"
-            android:layout_height="match_parent"
+            android:id="@+id/img"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
             android:layout_weight="1"
-            android:background="@color/black"></ImageView>
+            tools:layout_editor_absoluteY="3dp"
+            tools:srcCompat="@tools:sample/avatars" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
+            android:layout_weight="4"
 
-            android:layout_weight="3"
+            android:orientation="vertical"
             android:weightSum="2">
 
-            <EditText
+            <TextView
+                android:id="@+id/title"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="asfaf"
-                android:textStyle="bold"></EditText>
+                android:layout_height="match_parent"
 
-            <EditText
+                android:layout_weight="1"
+                android:text="TextView"
+                app:layout_constraintStart_toEndOf="@+id/img"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/description"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:hint="af">
-            </EditText>
-        </LinearLayout>
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="horizontal"
-        android:weightSum="5">
-
-        <ImageView
-            android:id="@+id/img3"
-            android:layout_width="170dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@color/black"></ImageView>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-
-            android:layout_weight="3"
-            android:weightSum="2">
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="asfaf"
-                android:textStyle="bold"></EditText>
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="af">
-            </EditText>
-        </LinearLayout>
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="horizontal"
-        android:weightSum="5">
-
-        <ImageView
-            android:id="@+id/img4"
-            android:layout_width="170dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@color/black"></ImageView>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-
-            android:layout_weight="3"
-            android:weightSum="2">
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="asfaf"
-                android:textStyle="bold"></EditText>
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="af">
-            </EditText>
-        </LinearLayout>
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="horizontal"
-        android:weightSum="5">
-
-        <ImageView
-            android:id="@+id/img5"
-            android:layout_width="170dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@color/black"></ImageView>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-
-            android:layout_weight="3"
-            android:weightSum="2">
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="asfaf"
-                android:textStyle="bold"></EditText>
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="af">
-            </EditText>
+                android:text="TextView" />
         </LinearLayout>
     </LinearLayout>
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
